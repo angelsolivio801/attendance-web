@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendace.carlo</title>
+    <link rel="stylesheet" href="SOLIVIOweb.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Attendance Log 📝</h1>
+
+        <div class="log-form">
+            <input type="text" id="employeeName" placeholder="Enter your full name" required>
+            <div class="button-group">
+                <button id="clockInBtn" onclick="logAttendance('Clock In')">Clock In</button>
+                <button id="clockOutBtn" onclick="logAttendance('Clock Out')">Clock Out</button>
+            </div>
+        </div>
+
+        <h2 class="log-title">Today's Log</h2>
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <script src="SOLIVIOweb.js"></script>
+</body>
+</html>

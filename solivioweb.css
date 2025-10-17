@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #4A90E2; /* Blue */
+    --secondary-color: #F8F8F8; /* Light gray background */
+    --text-color: #333;
+    --success-color: #5cb85c;
+    --danger-color: #d9534f;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    margin: 40px 0;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.log-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+#employeeName {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#employeeName:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.button-group button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#clockInBtn {
+    background-color: var(--success-color);
+    color: white;
+}
+
+#clockOutBtn {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.button-group button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* Table Styles */
+.log-title {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 1.2em;
+}
+
+#attendanceTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#attendanceTable thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#attendanceTable th, #attendanceTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+#attendanceTable tbody tr:nth-child(even) {
+    background-color: var(--secondary-color);
+}
